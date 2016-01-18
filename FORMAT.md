@@ -31,7 +31,7 @@ At the beginning of an ELI file, we have the following sequence of records:
 #### General structure
 
 Field   | Size    | Signedness
-------- | ------- |
+------- | ------- | ----------
 Type    | 1 byte  | unsigned
 Length  | 1 byte  | unsigned
 Payload | M bytes |
@@ -72,7 +72,7 @@ Unknown                         | 0xff      |
 #### File Descriptor
 
 Field       | Size   | Value | Signedness
------------ | ------ | ----- |
+----------- | ------ | ----- | ----------
 Type        | 1 byte | 0x01  | unsigned
 Length      | 1 byte | 0x06  | unsigned
 File Type   | 1 byte |       | unsigned
@@ -83,7 +83,7 @@ Reserved    | 1 byte |       | unsigned
 #### Physical Parameters
 
 Field      | Size    | Value | Signedness
----------- | ------- | ----- |
+---------- | ------- | ----- | ----------
 Type       | 1 byte  | 0x11  | unsigned
 Length     | 1 byte  | 0x09  | unsigned
 Misc Sepr  | 1 byte  |       | unsigned
@@ -95,7 +95,7 @@ Reserved   | 1 byte  |       | unsigned
 #### Rate Resolution
 
 Field      | Size    | Value | Signedness
----------- | ------- | ----- |
+---------- | ------- | ----- | ----------
 Type       | 1 byte  | 0x10  | unsigned
 Length     | 1 byte  | 0x0F  | unsigned
 F Samp     | 4 bytes |       | unsigned
@@ -109,7 +109,7 @@ Reserved   | 1 byte  |       | unsigned
 #### Calibration Configuration
 
 Field   | Size    | Value | Signedness
-------- | ------- | ----- |
+------- | ------- | ----- | ----------
 Type    | 1 byte  | 0x22  | unsigned
 Length  | 1 byte  | 0x24  | unsigned
 AL1     | 4 bytes |       | unsigned
@@ -125,7 +125,7 @@ Padding | 2 bytes |       | unsigned
 #### Calibration Configuration Fixed
 
 Field    | Size    | Value | Signedness
--------- | ------- | ----- |
+-------- | ------- | ----- | ----------
 Type     | 1 byte  | 0x26  | unsigned
 Length   | 1 byte  |       | unsigned
 Padding  | 9 bytes |       | unsigned
@@ -142,7 +142,7 @@ BR2      | 3 bytes |       | unsigned
 #### A4 Bilinear
 
 Field          | Size     | Value | Signedness
--------------- | -------- | ----- |
+-------------- | -------- | ----- | ----------
 Type           | 1 byte   | 0x23  | unsigned
 Length         | 1 byte   | 0x24  | unsigned
 Algorithm Data | 32 bytes |       | unsigned
@@ -151,13 +151,13 @@ Reserved       | 2 bytes  |       | unsigned
 #### Date Time
 
 Field    | Size   | Value | Signedness
--------- | ------ | ----- |
+-------- | ------ | ----- | ----------
 Type     | 1 byte | 0x31  | unsigned
 Length   | 1 byte | 0x09  | unsigned
 Time H   | 1 byte |       | unsigned
 Time M   | 1 byte |       | unsigned
 Time S   | 1 byte |       | unsigned
-Time D   | 1 byte |       | unsigned
-Time M   | 1 byte |       | unsigned
-Time Y   | 1 byte |       | unsigned
+Date D   | 1 byte |       | unsigned
+Date M   | 1 byte |       | unsigned
+Date Y   | 1 byte |       | unsigned
 Reserved | 1 byte |       | unsigned
